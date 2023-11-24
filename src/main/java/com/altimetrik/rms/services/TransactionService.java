@@ -57,7 +57,7 @@ public class TransactionService {
                 transaction.setTransactionDate(Timestamp.from(Instant.now()));
                 return iTransactionRepository.save(transaction);
             } else {
-                System.out.println("Insufficient balance");
+                System.out.println("Insufficient balance"); // zero balance
                 // Handle insufficient balance error
             }
         } else {
